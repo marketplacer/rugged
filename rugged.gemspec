@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 if ENV['DEVELOPMENT']
   VERSION = `git describe --tags`.strip.gsub('-', '.')[1..-1]
 else
-  require 'rugged/version'
+  require 'rugged'
   VERSION = Rugged::Version
 end
 
